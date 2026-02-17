@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "document_stores",
+  "info": {
+    "singularName": "document-store",
+    "pluralName": "document-stores",
+    "displayName": "Document store"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DocumentName": {
+      "type": "string",
+      "required": true
+    },
+    "DocumentType": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "pdf",
+        "docx",
+        "pptx"
+      ]
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}
